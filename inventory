@@ -1,0 +1,2 @@
+centos-slave ansible_host=<IP> ansible_ssh_pass=<password> ansible_user=<username>
+centos-master ansible_host=<IP> ansible_ssh_pass=<password> ansible_user=<username>

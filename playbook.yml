@@ -1,0 +1,15 @@
+--- 
+- 
+  become: true
+  gather_facts: false
+  hosts: "*"
+  name: "Create a blank file"
+  tasks: 
+    - 
+      file: 
+        group: "{{ ansible_user }}"
+        mode: "0755"
+        owner: "{{ ansible_user }}"
+        path: /home/code.txt
+        state: touch
+      name: "Create a blank file with permission on the servers"
